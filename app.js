@@ -34,7 +34,7 @@ app.use(express.static(__dirname + '/public'));
 
 
 app.get('/kittens', function(req, res){
-    res.send("Page under construction!");
+    res.send("Kittens are cute!");
 });
 
 app.get('/about', function(req, res){
