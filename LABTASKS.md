@@ -19,7 +19,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####In your project change the message that appears when the user is trying to access the page "kittens". Describe what you did and how it worked.
 
-> You get the idea...
+> We changed the message that would appear when someone clicked the link KITTENS, from a construction message to a silly message.
 
 #####Also change the message that a user sees when they are trying to find a page that doesn't exist.
 
