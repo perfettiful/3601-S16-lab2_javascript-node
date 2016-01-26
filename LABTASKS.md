@@ -15,7 +15,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####What is the contents of the "public" folder? What is each of the html files there and how are they referenced in app.js?
 
-> Your Answer Here!
+> The contents of the "public" folder are the files available to anyone through source code inquiry on their web browser. Each one of our html files is in public (about, index and petform), and they are reference in app.js as extensions to the web address in the form "/x.html".
 
 #####In your project change the message that appears when the user is trying to access the page "kittens". Describe what you did and how it worked.
 
