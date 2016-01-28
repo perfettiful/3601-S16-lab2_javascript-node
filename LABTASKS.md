@@ -55,8 +55,11 @@ coverage/*
 #####Find the testing file, describe where it is located and what it is testing. Run karma (the testing engine) as specified in the Readme and describe results. Do not edit any files at this time.
 
 #####After having set up Travis CI with your forked project, play around the page for your project (build history, settings, branches, etc) and describe at least 3 features you think would be useful when troubleshooting a broken project.
+> 1) Under Build History one can see after each push the build status 2) For a current build we can literally see what was executed in the terminal 3) We can also see the build statuses of all and any branch of a repo.
 
 #####What was the build status of your project right after you got everything set up? Use Travis to find any problems, and describe what failed, if anything. (Which files, what lines, why did failure occur, etc.)
+
+>After ours was set up initially it was in a failed state. The 3rd test was set up to fail beacue its expectation were incongruent to what was the name of the hyperlink in the index.html. We have since corrected this. 
 
 #####Fix any problems described in the previous question. Describe how you fixed them. Push your fix to GitHub and post a link to the passing build (from build history) here.
 
