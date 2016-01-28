@@ -46,9 +46,14 @@ app.get('/petForm', function(req, res){
     //console.log(req.query["newPet"]);
 });
 
+//app.post('/petForm', function(req, res){
+ //   res.send(req.body.newPet + " String Length: " + tools.stringLength(req.body.newPet));
+ //   console.log(req.body.newPet);
+//})
+
 app.post('/petForm', function(req, res){
-    res.send(req.body.newPet + " String Length: " + tools.stringLength(req.body.newPet));
-    console.log(req.body.newPet);
+    res.send("That is " + tools.calcPetAge(req.body.petAge) + " in doggy years!");
+    console.log(req.body.petAge);
 });
 
 app.get('/', function(req, res){
@@ -69,6 +74,7 @@ var server = app.listen(9000, function(){
    console.log("server listening on http://%s:%s", host, port);
 });
 
+app.get('/');
 
 
 
