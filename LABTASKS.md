@@ -36,11 +36,19 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####Where is client-side Javascript defined? Name file(s) in which it is used.
 
+> clientJavascript.js
+
 #####Where is server-side Javascript helper file defined? Where can it be used? Add a function to it and experiment with where you can call this function.
+> serverJavascript.js. It can be used in the app.js. We added calcPetAge function to serverJavascript.js to replace stringLength.
 
 #####What is the purpose of package.json file? What's in it, and what does it mean?
+>package.json provides information about the project including its name, version, owner, license, and which programs it requires to work. Our project depends on Jasmine and Karma to perform its tests, and Node as a server.
 
 #####What's in .gitgnore file? What's the purpose of it?
+>.idea/*
+node_modules/*
+coverage/*
+ The file tells the git version control system which files to ignore when sharing or updating. In our case node_modules is the file to be ignore in version controlling because it is transient. 
 
 ## Part #2: exploring testing
 
