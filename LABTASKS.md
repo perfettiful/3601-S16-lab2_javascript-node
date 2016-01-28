@@ -44,7 +44,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 #####What is the purpose of package.json file? What's in it, and what does it mean?
 >package.json provides information about the project including its name, version, owner, license, and which programs it requires to work. Our project depends on Jasmine and Karma to perform its tests, and Node as a server.
 
-#####What's in .gitgnore file? What's the purpose of it?
+#####What's in .gitignore file? What's the purpose of it?
 >.idea/*
 node_modules/*
 coverage/*
