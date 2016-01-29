@@ -14,8 +14,8 @@
         var ingr = new Array(3);
         var incr = new Array(3);
         var gradeCount = 11;
-        var allGrades = 0;
-        var allCredits = 0;
+        var gradePts = 0;
+        var totalCredits = 0;
         var gpa = 0;
 
         grade[0] = "A";
@@ -48,38 +48,52 @@
         incr[1] = document.GPACalcForm.CR2.value;
         incr[2] = document.GPACalcForm.CR3.value;
 
-        for(var x = 0; x < 4; x++)
-        {
+        for(var x = 0; x < 3; x++) {
+
             if(ingr[x] == "") break;
             if(isNaN(parseInt(incr[x])))
                 alert("Please enter the letter equivalent for each class.")
+
             var validGradeCheck = 0;
+
             for(var y = 0; y < gradeCount; y++){
+
                 if(ingr[x] == grade[y]){
-                    allGrades = allGrades + (parseInt(incr[x], 10) * credit[y]);
-                    allCredits = allCredits + parseInt(incr[x], 10);
+
+                    gradePts = gradePts + (parseInt(incr[x], 10) * credit[y]);
+
+                    totalCredits = totalCredits + parseInt(incr[x], 10);
+
                     validGradeCheck = 1;
+
                     break;
                 }
             }
+            console.log(gradePts);
+            console.log(totalCredits);
+
+
             if(validGradeCheck == 0){
                 alert("Error - Please use standard college grades into the form of 'A' 'A-' 'B+' 'B' 'B-' 'C+' 'C' 'C-' 'D+' 'D' 'F'.");
                 return 0;
             }
-            if(allCredits == 0){
+            if(totalCredits == 0){
                 alert("Error - You did not enter any credit values! GPA = N/A");
                 return 0;
             }
-            gpa = allGrades/allCredits;
+            gpa = gradePts/totalCredits;
             alert("GPA = " + eval(gpa));
+
             return 0;
 
         }
+        console.log(gradePts);
+        console.log(totalCredits);
     }
 </script>
 <center>
     <form name = "GPACalcForm">
-        <table border = "3" bgcolor="Chocolate" cellpadding="3" cellspacing="2">
+        <table border = "3" bgcolor="darkorange" cellpadding="3" cellspacing="2">
             <th>
                 /
             </th>
