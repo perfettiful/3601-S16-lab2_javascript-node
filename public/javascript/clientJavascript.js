@@ -29,3 +29,7 @@ var returnKittens = function(){
     return "kittens";
 };
 
+var returnPuppies = function(){
+    return "puppies";
+}
+

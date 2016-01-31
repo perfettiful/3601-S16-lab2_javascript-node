@@ -65,13 +65,9 @@
                     totalCredits = totalCredits + parseInt(incr[x], 10);
 
                     validGradeCheck = 1;
-
                     break;
                 }
             }
-            console.log(gradePts);
-            console.log(totalCredits);
-
 
             if(validGradeCheck == 0){
                 alert("Error - Please use standard college grades into the form of 'A' 'A-' 'B+' 'B' 'B-' 'C+' 'C' 'C-' 'D+' 'D' 'F'.");
@@ -83,12 +79,14 @@
             }
             gpa = gradePts/totalCredits;
             alert("GPA = " + eval(gpa));
-
+            console.log(x);
+            console.log(y);
+            console.log(gradePts);
+            console.log(totalCredits);
             return 0;
 
         }
-        console.log(gradePts);
-        console.log(totalCredits);
+
     }
 </script>
 <center>

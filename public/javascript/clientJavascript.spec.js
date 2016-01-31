@@ -13,5 +13,11 @@ describe('testing basic functions', function(){
     it('this test should fail!', function(){
         expect(returnKittens()).toBe("kittens");
     });
+
+    it('should return the correct string puppies', function(){
+        expect(returnPuppies()).toBe("puppies");
+    });
 });
+
+
 
