@@ -25,15 +25,7 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####Describe what happens when you submit a form on petForm page. What are the form parameters in petForm? What is the method for the form? Where is the form submission handled in the project? How are parameters extracted? How is the resulting message generated? How is this different from accessing the page petForm the first time (to see the form)?
 
-> When a user submits a petname, the node server which is listening receives the string that they sent. 
->method and action are parameters for the html form.
->the forms method is post
->form submissionj is handled in app.post() in app.js
->with the fuction arguments req and res
->with console.log()
 >
-
-
 #####Where is client-side Javascript defined? Name file(s) in which it is used.
 
 > clientJavascript.js
