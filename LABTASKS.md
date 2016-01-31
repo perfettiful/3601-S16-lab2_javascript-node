@@ -25,7 +25,15 @@ Study the project you have cloned. Run it according to the instrucitons in the R
 
 #####Describe what happens when you submit a form on petForm page. What are the form parameters in petForm? What is the method for the form? Where is the form submission handled in the project? How are parameters extracted? How is the resulting message generated? How is this different from accessing the page petForm the first time (to see the form)?
 
+> When a user submits a petname, the node server which is listening receives the string that they sent. 
+>method and action are parameters for the html form.
+>the forms method is post
+>form submissionj is handled in app.post() in app.js
+>with the fuction arguments req and res
+>with console.log()
 >
+
+
 #####Where is client-side Javascript defined? Name file(s) in which it is used.
 
 > clientJavascript.js
@@ -54,8 +62,12 @@ coverage/*
 >After ours was set up initially it was in a failed state. The 3rd test was set up to fail beacue its expectation were incongruent to what was the name of the hyperlink in the index.html. We have since corrected this. 
 
 #####Fix any problems described in the previous question. Describe how you fixed them. Push your fix to GitHub and post a link to the passing build (from build history) here.
+> On the thrid test, the expectation statement didnt match the return statement for the returnKittens() function it was testing.
+(https://travis-ci.org/perfettiful/3601-S16-lab2_javascript-node)
 
 - Study jasmine testing syntax. Think of a Javascript function, describe its behavior by writing tests for it (this is test-driven development, or TDD). Add the function, run the tests. (Actually do this. Don't forget to commit your changes!)
+- 
+> Done!
 
 ## Part #3: adding a GPA calculator
 
