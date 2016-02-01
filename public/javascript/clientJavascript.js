@@ -31,5 +31,9 @@ var returnKittens = function(){
 
 var returnPuppies = function(){
     return "puppies";
-}
+};
+
+var infoAlert = function() {
+    alert("This GPA calculator was produced by Jung & Nate, January 2015");
+};
 

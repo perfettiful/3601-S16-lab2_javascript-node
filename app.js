@@ -74,7 +74,13 @@ var server = app.listen(9000, function(){
    console.log("server listening on http://%s:%s", host, port);
 });
 
-app.get('/');
+app.get('/gpacalc', function(req, res){
+    res.sendFile('gpacalc.html', options);
+});
+
+app.post('/gpacalc', function(req, res){
+    res.send("Your GPA:" + tools.gpaCalc(req.body.credit, req.body.credit2, req.body.credit3, req.body.grade, req.body.grade2, req.body.grade3));
+});
 
 
 
