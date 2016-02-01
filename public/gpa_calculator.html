@@ -7,7 +7,9 @@
 </head>
 
 <body>
-<script language="JavaScript">
+<script src="javascript/gpaCalcFcts.js"></script>
+
+<!--<script language="JavaScript">
     function  gpaCalc(){
         var grade = new Array(11);
         var credit = new Array(11);
@@ -64,7 +66,7 @@
 
                     totalCredits = totalCredits + parseInt(incr[x], 10);
 
-                    validGradeCheck = 1;
+                    validGradeCheck = 1;gpaCalc(){
                     break;
                 }
             }
@@ -89,6 +91,8 @@
 
     }
 </script>
+
+-->
 <center>
     <form name = "GPACalcForm">
         <table border = "3" bgcolor="darkorange" cellpadding="3" cellspacing="2">
@@ -130,7 +134,7 @@
                 <td>
                     Class 3
                 </td>
-                <td>
+                <td>dd tests for functions needed to compute the GPA and then implement the functions themselves. Note, however, that karma doesn't work with expo
                     <input type="text" size="3" name="GR3" align="TOP" maxlength="5">
                 </td>
                 <td>
@@ -139,7 +143,7 @@
             </tr>
             <tr align="center">
                 <td colspan="3">
-                    <input type="button" value="Calculate" name="CalcButton" onclick="gpaCalc()">
+                    <input type="button" value="Calculate" name="CalcButton" onclick="allCredits()">
                 </td>
             </tr>
         </table>
