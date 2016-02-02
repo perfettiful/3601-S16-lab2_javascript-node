@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> GPA CALCULATOR </title>
+
+</head>
+
+<body>
+<hr>
+<form method="post" action="/gpa">
+    <select name="grd1">
+        <option value=4.0>A</option>
+        <option value=3.667>A-</option>
+        <option value=3.333>B+</option>
+        <option value=3.0>B</option>
+        <option value=2.667>B-</option>
+        <option value=2.333>C+</option>
+        <option value=2.0>C</option>
+        <option value=1.667>C-</option>
+        <option value=1.333>D+</option>
+        <option value=1.0>D</option>
+        <option value=0.667>D-</option>
+        <option value=0.0>F</option>
+    </select>
+    <select name="crd1">
+        <option value=1>1 credit</option>
+        <option value=2>2 credit</option>
+        <option value=3>3 credit</option>
+        <option value=4>4 credit</option>
+        <option value=5>5 credit</option>
+    </select>
+    <br>
+    <select name="grd2">
+        <option value=4.0>A</option>
+        <option value=3.667>A-</option>
+        <option value=3.333>B+</option>
+        <option value=3.0>B</option>
+        <option value=2.667>B-</option>
+        <option value=2.333>C+</option>
+        <option value=2.0>C</option>
+        <option value=1.667>C-</option>
+        <option value=1.333>D+</option>
+        <option value=1.0>D</option>
+        <option value=0.667>D-</option>
+        <option value=0.0>F</option>
+    </select>
+    <select name="crd2">
+        <option value=1>1 credit</option>
+        <option value=2>2 credit</option>
+        <option value=3>3 credit</option>
+        <option value=4>4 credit</option>
+        <option value=5>5 credit</option>
+    </select>
+    <br>
+    <select name="grd3">
+        <option value=4.0>A</option>
+        <option value=3.667>A-</option>
+        <option value=3.333>B+</option>
+        <option value=3.0>B</option>
+        <option value=2.667>B-</option>
+        <option value=2.333>C+</option>
+        <option value=2.0>C</option>
+        <option value=1.667>C-</option>
+        <option value=1.333>D+</option>
+        <option value=1.0>D</option>
+        <option value=0.667>D-</option>
+        <option value=0.0>F</option>
+    </select>
+    <select name="crd3">
+        <option value=1>1 credit</option>
+        <option value=2>2 credit</option>
+        <option value=3>3 credit</option>
+        <option value=4>4 credit</option>
+        <option value=5>5 credit</option>
+    </select>
+    <br>
+
+    <input type="submit" value="Calculate">
+</form>
+
+<br>
+
+<button id="infoAlert" style="margin-top: 10px" type="button" onclick="sendInfoAlert()">Click for More Info</button>
+
+
+<!--<script language="JavaScript">
+    function  gpaCalc(){
+        var grade = new Array(11);
+        var credit = new Array(11);
+        var ingr = new Array(3);
+        var incr = new Array(3);
+        var gradeCount = 11;
+        var gradePts = 0;
+        var totalCredits = 0;
+        var gpa = 0;
+
+        grade[0] = "A";
+        credit[0] = 4;
+        grade[1] = "A-";
+        credit[1] = 3.667;
+        grade[2] = "B+";
+        credit[2] = 3.333;
+        grade[3] = "B";
+        credit[3] = 3;
+        grade[4] = "B-";
+        credit[4] = 2.667;
+        grade[5] = "C+";
+        credit[5] = 2.333;
+        grade[6] = "C";
+        credit[6] = 2;
+        grade[7] = "C-";
+        credit[7] = 1.667;
+        grade[8] = "D+";
+        credit[8] = 1.333;
+        grade[9] = "D";
+        credit[9] = 1;
+        grade[10] = "F"
+        credit[10] = 0;
+        ingr[0] = document.GPACalcForm.GR1.value;
+        ingr[1] = document.GPACalcForm.GR2.value;
+        ingr[2] = document.GPACalcForm.GR3.value;
+
+        incr[0] = document.GPACalcForm.CR1.value;
+        incr[1] = document.GPACalcForm.CR2.value;
+        incr[2] = document.GPACalcForm.CR3.value;
+
+        for(var x = 0; x < 3; x++) {
+
+            if(ingr[x] == "") break;
+            if(isNaN(parseInt(incr[x])))
+                alert("Please enter the letter equivalent for each class.")
+
+            var validGradeCheck = 0;
+
+            for(var y = 0; y < gradeCount; y++){
+
+                if(ingr[x] == grade[y]){
+
+                    gradePts = gradePts + (parseInt(incr[x], 10) * credit[y]);
+
+                    totalCredits = totalCredits + parseInt(incr[x], 10);
+
+                    validGradeCheck = 1;gpaCalc(){
+                    break;
+                }
+            }
+
+            if(validGradeCheck == 0){
+                alert("Error - Please use standard college grades into the form of 'A' 'A-' 'B+' 'B' 'B-' 'C+' 'C' 'C-' 'D+' 'D' 'F'.");
+                return 0;
+            }
+            if(totalCredits == 0){
+                alert("Error - You did not enter any credit values! GPA = N/A");
+                return 0;
+            }
+            gpa = gradePts/totalCredits;
+            alert("GPA = " + eval(gpa));
+            console.log(x);
+            console.log(y);
+            console.log(gradePts);
+            console.log(totalCredits);
+            return 0;
+
+        }
+
+    }
+</script>
+
+-->
+<center>
+
+
+    <!--
+    <form name = "GPACalcForm">
+        <table border = "3" bgcolor="darkorange" cellpadding="3" cellspacing="2">
+            <th>
+                /
+            </th>
+
+            <th>
+                Grade
+            </th>
+            <th>
+                Credits
+            </th>
+            <tr>
+                <td>
+                    Class 1
+                </td>
+                <td>
+                    <input type="text" size="3" name="GR1" align="TOP" maxlength="5">
+                </td>
+                <td>
+                    <input type="text" size="3" name="CR1" align="TOP" maxlength="5">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Class 2
+                </td>
+                <td>
+                    <input type="text" size="3" name="GR2" align="TOP" maxlength="5">
+                </td>
+                <td>
+                    <input type="text" size="3" name="CR2" align="TOP" maxlength="5">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    Class 3
+                </td>
+                <td>dd tests for functions needed to compute the GPA and then implement the functions themselves. Note, however, that karma doesn't work with expo
+                    <input type="text" size="3" name="GR3" align="TOP" maxlength="5">
+                </td>
+                <td>
+                    <input type="text" size="3" name="CR3" align="TOP" maxlength="5">
+                </td>
+            </tr>
+            <tr align="center">
+                <td colspan="3">
+                    <input type="button" value="Calculate" name="CalcButton" onclick="allCredits()">
+                </td>
+            </tr>
+        </table>
+    </form> -->
+</center>
+</body>
+
+</html>

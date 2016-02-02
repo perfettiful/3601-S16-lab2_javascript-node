@@ -60,27 +60,30 @@ app.get('/', function(req, res){
     res.sendFile('index.html', options);
 });
 
+app.get('/gpa', function(req, res){
+    res.sendFile('gpa.html', options);
+});
+
+app.post('/gpa', function(req, res){
+    res.send("Your GPA:" + tools.gpaCalc(req.body.crd1, req.body.crd2, req.body.crd3, req.body.grd1, req.body.grd2, req.body.grd3));
+});
+
 // Wildcard catches requests for non-existent routes or files and responds with a 404 message (or an html page if you want to make a custom one!)
 app.get('*', function(req, res){
+    console.log("In *");
     res.send("That page doesnt exist!!");
   //  res.sendFile('404.html', options);
+
 });
+
+
 
 // Starts the nodejs server on port 9000
 var server = app.listen(9000, function(){
-   var host = server.address().address;
-   var port = server.address().port;
+    var host = server.address().address;
+    var port = server.address().port;
 
-   console.log("server listening on http://%s:%s", host, port);
+    console.log("server listening on http://%s:%s", host, port);
 });
-
-app.get('/gpacalc', function(req, res){
-    res.sendFile('gpacalc.html', options);
-});
-
-app.post('/gpacalc', function(req, res){
-    res.send("Your GPA:" + tools.gpaCalc(req.body.credit, req.body.credit2, req.body.credit3, req.body.grade, req.body.grade2, req.body.grade3));
-});
-
 
 

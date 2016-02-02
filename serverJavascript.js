@@ -14,10 +14,10 @@ exports.gpaCalc = function(crd1, crd2, crd3, grd1, grd2, grd3){
     var c2 = parseInt(crd2);
     var c3 = parseInt(crd3);
 
-    var totalCreds = (c1 + c2 + c3).toFixed(3);
+    var totalCreds = (c1 + c2 + c3);
     var grdPts = ((c1 * grd1) + (c2 * grd2) + (c3 * grd3));
 
-    var gpa = grdPts / totalCreds;
+    var gpa = (grdPts / totalCreds).toFixed(2);
 
     return gpa;
 };
