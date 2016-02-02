@@ -37,3 +37,18 @@ var infoAlert = function() {
     alert("This GPA calculator was produced by Jung & Nate, January 2015");
 };
 
+var gpaCalc = function(crd1, crd2, crd3, grd1, grd2, grd3){
+    var c1 = parseInt(crd1);
+    var c2 = parseInt(crd2);
+    var c3 = parseInt(crd3);
+    var g1 = parseInt(grd1);
+    var g2 = parseInt(grd2);
+    var g3 = parseInt(grd3);
+
+    var totalCreds = (c1 + c2 + c3);
+    var grdPts = ((c1 * g1) + (c2 * g2) + (c3 * g3));
+
+    var gpa = parseInt((grdPts / totalCreds).toFixed(2));
+    return gpa;
+
+};
